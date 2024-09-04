@@ -1,0 +1,263 @@
+2024-09-04T03:20:27.785453+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T03:20:28.194109+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T03:20:28.228615+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T03:20:28.228615+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T03:21:16.603569+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T03:21:16.990357+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T03:21:17.023583+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T03:21:17.023583+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T03:23:42.935958+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T03:23:42.981266+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T03:23:42.981266+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T03:24:13.092133+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T03:24:13.132755+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T03:24:13.132755+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T03:25:00.205011+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T03:25:00.246030+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T03:25:00.246030+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T10:08:02.851036+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T10:08:02.892454+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T10:08:02.892454+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T14:56:38.281178+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T14:56:38.693589+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T14:56:38.730026+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T14:56:38.730026+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T14:57:36.879633+0530 ERROR Error : (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 98e67ed59e1d1-2d8d5f90890sm6231356a91.47 - gsmtp')
+2024-09-04T14:57:36.879633+0530 ERROR Error : (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 98e67ed59e1d1-2d8d5f90890sm6231356a91.47 - gsmtp')
+2024-09-04T15:00:40.749822+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:00:40.791866+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:00:40.791866+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:00:44.047317+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:00:44.076703+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:00:44.076703+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:09:35.503959+0530 ERROR Error : 'Session' object has no attribute 'func'
+2024-09-04T15:09:35.503959+0530 ERROR Error : 'Session' object has no attribute 'func'
+2024-09-04T15:10:03.418114+0530 ERROR Error : 'Session' object has no attribute 'func'
+2024-09-04T15:10:03.418114+0530 ERROR Error : 'Session' object has no attribute 'func'
+2024-09-04T15:10:09.888088+0530 ERROR Error : 'Session' object has no attribute 'func'
+2024-09-04T15:10:09.888088+0530 ERROR Error : 'Session' object has no attribute 'func'
+2024-09-04T15:12:47.104935+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:12:47.146142+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:12:47.146142+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:13:01.801877+0530 ERROR Error : [ValueError('dictionary update sequence element #0 has length 5; 2 is required'), TypeError('vars() argument must have __dict__ attribute')]
+2024-09-04T15:13:01.801877+0530 ERROR Error : [ValueError('dictionary update sequence element #0 has length 5; 2 is required'), TypeError('vars() argument must have __dict__ attribute')]
+2024-09-04T15:14:54.757997+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:14:54.802194+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:14:54.802194+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:15:23.215061+0530 ERROR Error : 'Session' object has no attribute 'func'
+2024-09-04T15:15:23.215061+0530 ERROR Error : 'Session' object has no attribute 'func'
+2024-09-04T15:15:42.990174+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:15:43.032052+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:15:43.032052+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:17:02.585546+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:17:02.627301+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:17:02.627301+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:17:10.730073+0530 ERROR Error : [ValueError('dictionary update sequence element #0 has length 5; 2 is required'), TypeError('vars() argument must have __dict__ attribute')]
+2024-09-04T15:17:10.730073+0530 ERROR Error : [ValueError('dictionary update sequence element #0 has length 5; 2 is required'), TypeError('vars() argument must have __dict__ attribute')]
+2024-09-04T15:19:35.514318+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:19:35.556800+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:19:35.556800+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:19:43.876450+0530 ERROR Unhandled error: [ValueError('dictionary update sequence element #0 has length 5; 2 is required'), TypeError('vars() argument must have __dict__ attribute')]
+2024-09-04T15:19:43.876450+0530 ERROR Unhandled error: [ValueError('dictionary update sequence element #0 has length 5; 2 is required'), TypeError('vars() argument must have __dict__ attribute')]
+2024-09-04T15:22:10.056180+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:22:10.097505+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:22:10.097505+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:22:54.926824+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:22:54.973009+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:22:54.973009+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:23:23.842687+0530 ERROR Unhandled error: Can't determine which FROM clause to join from, there are multiple FROMS which can join to this entity. Please use the .select_from() method to establish an explicit left side, as well as providing an explicit ON clause if not present already to help resolve the ambiguity.
+2024-09-04T15:23:23.842687+0530 ERROR Unhandled error: Can't determine which FROM clause to join from, there are multiple FROMS which can join to this entity. Please use the .select_from() method to establish an explicit left side, as well as providing an explicit ON clause if not present already to help resolve the ambiguity.
+2024-09-04T15:24:34.894387+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:24:34.934358+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:24:34.934358+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:25:29.042166+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:25:29.085169+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:25:29.085169+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:27:14.904135+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:27:14.949078+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:27:14.949078+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:30:26.058954+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:30:26.099540+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:30:26.099540+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:32:25.925637+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:32:25.965379+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:32:25.965379+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:35:11.015253+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:35:11.056824+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:35:11.056824+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:37:07.748336+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:37:07.790666+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:37:07.790666+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:38:21.397738+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:38:21.438688+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:38:21.438688+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:38:31.266677+0530 ERROR Unhandled error: 'str' object has no attribute '_sa_instance_state'
+2024-09-04T15:38:31.266677+0530 ERROR Unhandled error: 'str' object has no attribute '_sa_instance_state'
+2024-09-04T15:39:22.827944+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:39:22.871846+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:39:22.871846+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:39:35.418243+0530 ERROR Unhandled error: 'str' object has no attribute '_sa_instance_state'
+2024-09-04T15:39:35.418243+0530 ERROR Unhandled error: 'str' object has no attribute '_sa_instance_state'
+2024-09-04T15:44:32.478409+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:44:32.519063+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:44:32.519063+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:46:50.597916+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:46:50.638193+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:46:50.638193+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:49:00.653513+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:49:00.693952+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:49:00.693952+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:49:13.319512+0530 ERROR Unhandled error: (MySQLdb.IntegrityError) (1048, "Column 'org_id' cannot be null")
+[SQL: INSERT INTO `role` (name, description, org_id) VALUES (%s, %s, %s)]
+[parameters: ('Admin', None, None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-09-04T15:49:13.319512+0530 ERROR Unhandled error: (MySQLdb.IntegrityError) (1048, "Column 'org_id' cannot be null")
+[SQL: INSERT INTO `role` (name, description, org_id) VALUES (%s, %s, %s)]
+[parameters: ('Admin', None, None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-09-04T15:54:43.129460+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:54:43.175312+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:54:43.175312+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:54:53.672233+0530 ERROR Unhandled error: (MySQLdb.IntegrityError) (1048, "Column 'org_id' cannot be null")
+[SQL: INSERT INTO `role` (name, description, org_id) VALUES (%s, %s, %s)]
+[parameters: ('Admin', None, None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-09-04T15:54:53.672233+0530 ERROR Unhandled error: (MySQLdb.IntegrityError) (1048, "Column 'org_id' cannot be null")
+[SQL: INSERT INTO `role` (name, description, org_id) VALUES (%s, %s, %s)]
+[parameters: ('Admin', None, None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-09-04T15:55:56.987488+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:55:57.027860+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:55:57.027860+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:57:38.959513+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:57:38.999441+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:57:38.999441+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:03:24.188682+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:03:24.228534+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:03:24.228534+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:07:14.105113+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:07:14.149083+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:07:14.149083+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:09:35.704034+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:09:35.743743+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:09:35.743743+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:12:46.743900+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:12:46.783919+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:12:46.783919+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:13:21.511284+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:13:21.572475+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:13:21.572475+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:14:01.443753+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:14:01.482828+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:14:01.482828+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:16:26.199107+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:16:26.239669+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:16:26.239669+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:16:56.581036+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:16:56.622751+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:16:56.622751+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:17:54.729795+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:17:54.770179+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:17:54.770179+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:18:35.692741+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:18:35.732883+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:18:35.732883+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:23:25.289652+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:23:25.333650+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:23:25.333650+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:26:42.258629+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:26:42.301734+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:26:42.301734+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:30:33.743241+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:30:33.785073+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:30:33.785073+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:30:54.359414+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:30:54.400552+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:30:54.400552+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:31:35.730426+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:31:35.774618+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:31:35.774618+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:31:55.282823+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:31:55.321399+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:31:55.321399+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:33:03.260126+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:33:03.301297+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:33:03.301297+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:34:33.343237+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:34:33.383986+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:34:33.383986+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:36:19.659167+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:36:19.699593+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:36:19.699593+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:37:26.291391+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:37:26.331924+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:37:26.331924+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:40:12.619787+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:40:12.662240+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:40:12.662240+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:41:58.227827+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:41:58.268651+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:41:58.268651+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:44:18.336420+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:44:18.377973+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:44:18.377973+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:44:40.798180+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:44:40.839028+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:44:40.839028+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:44:42.577740+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:44:42.608984+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:44:42.608984+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:45:23.918759+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:45:23.963767+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:45:23.963767+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:56:58.475972+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:56:58.917866+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:56:58.953286+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:56:58.953286+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:03:44.244023+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:03:44.285280+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:03:44.285280+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:10:46.819316+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:10:46.859794+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:10:46.859794+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:11:13.119150+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:11:13.158951+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:11:13.158951+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:14:43.134406+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:14:43.176388+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:14:43.176388+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:21:57.761153+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:21:57.802519+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:21:57.802519+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:34:14.641725+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:34:14.682431+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:34:14.682431+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:34:21.352909+0530 ERROR Unhandled error: HTTPException.__init__() got an unexpected keyword argument 'content'
+2024-09-04T17:34:21.352909+0530 ERROR Unhandled error: HTTPException.__init__() got an unexpected keyword argument 'content'
+2024-09-04T17:38:08.142723+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:38:08.183409+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:38:08.183409+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:38:51.832954+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:38:51.874154+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:38:51.874154+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:39:45.314533+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:39:45.355367+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:39:45.355367+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:40:13.414887+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:40:13.454271+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:40:13.454271+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:41:53.449340+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:41:53.499721+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:41:53.499721+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:41:58.895389+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:41:58.925267+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:41:58.925267+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:42:45.673791+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:42:45.715663+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:42:45.715663+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:53:51.349476+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:53:51.390991+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:53:51.390991+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:53:56.522346+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:53:56.569060+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:53:56.569060+0530 SUCCESS Bankend Server Startup Successful

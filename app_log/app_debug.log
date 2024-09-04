@@ -1,0 +1,2057 @@
+2024-09-04T03:20:27.785453+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T03:20:28.194109+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T03:20:28.228615+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T03:20:28.228615+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T03:21:16.603569+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T03:21:16.990357+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T03:21:17.023583+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T03:21:17.023583+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T03:23:42.935958+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T03:23:42.981266+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T03:23:42.981266+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T03:24:13.092133+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T03:24:13.132755+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T03:24:13.132755+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T03:25:00.205011+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T03:25:00.246030+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T03:25:00.246030+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T10:08:02.851036+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T10:08:02.892454+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T10:08:02.892454+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T14:56:38.281178+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T14:56:38.693589+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T14:56:38.730026+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T14:56:38.730026+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T14:57:34.067446+0530 DEBUG DB: <sqlmodel.orm.session.Session object at 0x1091c6930>
+2024-09-04T14:57:34.067446+0530 DEBUG DB: <sqlmodel.orm.session.Session object at 0x1091c6930>
+2024-09-04T14:57:36.871196+0530 DEBUG Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/Product Fusion/db/db.py", line 35, in get_db
+    yield db
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/concurrency.py", line 27, in contextmanager_in_threadpool
+    yield await run_in_threadpool(cm.__enter__)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/starlette/concurrency.py", line 42, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2177, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 859, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/Product Fusion/endpoints/member_endpoints.py", line 45, in signup
+    send_email("Welcome to the Platform", new_user.email, f"Welcome to {org_name}! You are now the owner.")
+  File "/Users/sayantanguha/Desktop/Product Fusion/auth/auth.py", line 43, in send_email
+    server.login(sender_email, password)
+  File "/opt/homebrew/Cellar/python@3.12/3.12.4/Frameworks/Python.framework/Versions/3.12/lib/python3.12/smtplib.py", line 750, in login
+    raise last_exception
+  File "/opt/homebrew/Cellar/python@3.12/3.12.4/Frameworks/Python.framework/Versions/3.12/lib/python3.12/smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+                   ^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.4/Frameworks/Python.framework/Versions/3.12/lib/python3.12/smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 98e67ed59e1d1-2d8d5f90890sm6231356a91.47 - gsmtp')
+
+2024-09-04T14:57:36.871196+0530 DEBUG Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/Product Fusion/db/db.py", line 35, in get_db
+    yield db
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/concurrency.py", line 27, in contextmanager_in_threadpool
+    yield await run_in_threadpool(cm.__enter__)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/starlette/concurrency.py", line 42, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2177, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 859, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/Product Fusion/endpoints/member_endpoints.py", line 45, in signup
+    send_email("Welcome to the Platform", new_user.email, f"Welcome to {org_name}! You are now the owner.")
+  File "/Users/sayantanguha/Desktop/Product Fusion/auth/auth.py", line 43, in send_email
+    server.login(sender_email, password)
+  File "/opt/homebrew/Cellar/python@3.12/3.12.4/Frameworks/Python.framework/Versions/3.12/lib/python3.12/smtplib.py", line 750, in login
+    raise last_exception
+  File "/opt/homebrew/Cellar/python@3.12/3.12.4/Frameworks/Python.framework/Versions/3.12/lib/python3.12/smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+                   ^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.4/Frameworks/Python.framework/Versions/3.12/lib/python3.12/smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 98e67ed59e1d1-2d8d5f90890sm6231356a91.47 - gsmtp')
+
+2024-09-04T14:57:36.876018+0530 DEBUG Session Can't Be Created.
+2024-09-04T14:57:36.876018+0530 DEBUG Session Can't Be Created.
+2024-09-04T14:57:36.879633+0530 ERROR Error : (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 98e67ed59e1d1-2d8d5f90890sm6231356a91.47 - gsmtp')
+2024-09-04T14:57:36.879633+0530 ERROR Error : (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 98e67ed59e1d1-2d8d5f90890sm6231356a91.47 - gsmtp')
+2024-09-04T15:00:40.749822+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:00:40.791866+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:00:40.791866+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:00:44.047317+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:00:44.076703+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:00:44.076703+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:00:55.871544+0530 DEBUG DB: <sqlmodel.orm.session.Session object at 0x10358a480>
+2024-09-04T15:00:55.871544+0530 DEBUG DB: <sqlmodel.orm.session.Session object at 0x10358a480>
+2024-09-04T15:02:26.329628+0530 DEBUG DB: <sqlmodel.orm.session.Session object at 0x1037441d0>
+2024-09-04T15:02:26.329628+0530 DEBUG DB: <sqlmodel.orm.session.Session object at 0x1037441d0>
+2024-09-04T15:05:45.728693+0530 DEBUG DB: <sqlmodel.orm.session.Session object at 0x1037e6630>
+2024-09-04T15:05:45.728693+0530 DEBUG DB: <sqlmodel.orm.session.Session object at 0x1037e6630>
+2024-09-04T15:07:34.604699+0530 DEBUG DB: <sqlmodel.orm.session.Session object at 0x104437b30>
+2024-09-04T15:07:34.604699+0530 DEBUG DB: <sqlmodel.orm.session.Session object at 0x104437b30>
+2024-09-04T15:07:41.698029+0530 DEBUG DB: <sqlmodel.orm.session.Session object at 0x1037c5370>
+2024-09-04T15:07:41.698029+0530 DEBUG DB: <sqlmodel.orm.session.Session object at 0x1037c5370>
+2024-09-04T15:08:57.222406+0530 DEBUG DB: <sqlmodel.orm.session.Session object at 0x104437fb0>
+2024-09-04T15:08:57.222406+0530 DEBUG DB: <sqlmodel.orm.session.Session object at 0x104437fb0>
+2024-09-04T15:09:06.028851+0530 DEBUG DB: <sqlmodel.orm.session.Session object at 0x1044abef0>
+2024-09-04T15:09:06.028851+0530 DEBUG DB: <sqlmodel.orm.session.Session object at 0x1044abef0>
+2024-09-04T15:09:13.179212+0530 DEBUG DB: <sqlmodel.orm.session.Session object at 0x1044abe00>
+2024-09-04T15:09:13.179212+0530 DEBUG DB: <sqlmodel.orm.session.Session object at 0x1044abe00>
+2024-09-04T15:09:35.482182+0530 DEBUG DB: <sqlmodel.orm.session.Session object at 0x1040c1880>
+2024-09-04T15:09:35.482182+0530 DEBUG DB: <sqlmodel.orm.session.Session object at 0x1040c1880>
+2024-09-04T15:09:35.502547+0530 DEBUG Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/Product Fusion/db/db.py", line 35, in get_db
+    yield db
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/concurrency.py", line 27, in contextmanager_in_threadpool
+    yield await run_in_threadpool(cm.__enter__)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/starlette/concurrency.py", line 42, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2177, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 859, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/Product Fusion/endpoints/stats_endpoint.py", line 14, in role_wise_users
+    result = db.query(Role.name, db.func.count(Member.id)).join(Member).group_by(Role.name).all()
+                                 ^^^^^^^
+AttributeError: 'Session' object has no attribute 'func'
+
+2024-09-04T15:09:35.502547+0530 DEBUG Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/Product Fusion/db/db.py", line 35, in get_db
+    yield db
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/concurrency.py", line 27, in contextmanager_in_threadpool
+    yield await run_in_threadpool(cm.__enter__)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/starlette/concurrency.py", line 42, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2177, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 859, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/Product Fusion/endpoints/stats_endpoint.py", line 14, in role_wise_users
+    result = db.query(Role.name, db.func.count(Member.id)).join(Member).group_by(Role.name).all()
+                                 ^^^^^^^
+AttributeError: 'Session' object has no attribute 'func'
+
+2024-09-04T15:09:35.503685+0530 DEBUG Session Can't Be Created.
+2024-09-04T15:09:35.503685+0530 DEBUG Session Can't Be Created.
+2024-09-04T15:09:35.503959+0530 ERROR Error : 'Session' object has no attribute 'func'
+2024-09-04T15:09:35.503959+0530 ERROR Error : 'Session' object has no attribute 'func'
+2024-09-04T15:10:03.412197+0530 DEBUG DB: <sqlmodel.orm.session.Session object at 0x1044602c0>
+2024-09-04T15:10:03.412197+0530 DEBUG DB: <sqlmodel.orm.session.Session object at 0x1044602c0>
+2024-09-04T15:10:03.416853+0530 DEBUG Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/Product Fusion/db/db.py", line 35, in get_db
+    yield db
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/concurrency.py", line 27, in contextmanager_in_threadpool
+    yield await run_in_threadpool(cm.__enter__)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/starlette/concurrency.py", line 42, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2177, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 859, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/Product Fusion/endpoints/stats_endpoint.py", line 20, in org_wise_members
+    result = db.query(Organization.name, db.func.count(Member.id)).join(Member).group_by(Organization.name).all()
+                                         ^^^^^^^
+AttributeError: 'Session' object has no attribute 'func'
+
+2024-09-04T15:10:03.416853+0530 DEBUG Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/Product Fusion/db/db.py", line 35, in get_db
+    yield db
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/concurrency.py", line 27, in contextmanager_in_threadpool
+    yield await run_in_threadpool(cm.__enter__)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/starlette/concurrency.py", line 42, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2177, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 859, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/Product Fusion/endpoints/stats_endpoint.py", line 20, in org_wise_members
+    result = db.query(Organization.name, db.func.count(Member.id)).join(Member).group_by(Organization.name).all()
+                                         ^^^^^^^
+AttributeError: 'Session' object has no attribute 'func'
+
+2024-09-04T15:10:03.417485+0530 DEBUG Session Can't Be Created.
+2024-09-04T15:10:03.417485+0530 DEBUG Session Can't Be Created.
+2024-09-04T15:10:03.418114+0530 ERROR Error : 'Session' object has no attribute 'func'
+2024-09-04T15:10:03.418114+0530 ERROR Error : 'Session' object has no attribute 'func'
+2024-09-04T15:10:09.884739+0530 DEBUG DB: <sqlmodel.orm.session.Session object at 0x1044d0440>
+2024-09-04T15:10:09.884739+0530 DEBUG DB: <sqlmodel.orm.session.Session object at 0x1044d0440>
+2024-09-04T15:10:09.887210+0530 DEBUG Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/Product Fusion/db/db.py", line 35, in get_db
+    yield db
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/concurrency.py", line 27, in contextmanager_in_threadpool
+    yield await run_in_threadpool(cm.__enter__)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/starlette/concurrency.py", line 42, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2177, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 859, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/Product Fusion/endpoints/stats_endpoint.py", line 26, in org_role_wise_users
+    result = db.query(Organization.name, Role.name, db.func.count(Member.id)).join(Member).join(Role).group_by(Organization.name, Role.name).all()
+                                                    ^^^^^^^
+AttributeError: 'Session' object has no attribute 'func'
+
+2024-09-04T15:10:09.887210+0530 DEBUG Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/Product Fusion/db/db.py", line 35, in get_db
+    yield db
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/concurrency.py", line 27, in contextmanager_in_threadpool
+    yield await run_in_threadpool(cm.__enter__)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/starlette/concurrency.py", line 42, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2177, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 859, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/Product Fusion/endpoints/stats_endpoint.py", line 26, in org_role_wise_users
+    result = db.query(Organization.name, Role.name, db.func.count(Member.id)).join(Member).join(Role).group_by(Organization.name, Role.name).all()
+                                                    ^^^^^^^
+AttributeError: 'Session' object has no attribute 'func'
+
+2024-09-04T15:10:09.887811+0530 DEBUG Session Can't Be Created.
+2024-09-04T15:10:09.887811+0530 DEBUG Session Can't Be Created.
+2024-09-04T15:10:09.888088+0530 ERROR Error : 'Session' object has no attribute 'func'
+2024-09-04T15:10:09.888088+0530 ERROR Error : 'Session' object has no attribute 'func'
+2024-09-04T15:12:47.104935+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:12:47.146142+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:12:47.146142+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:13:01.695095+0530 DEBUG DB: <sqlmodel.orm.session.Session object at 0x1120974a0>
+2024-09-04T15:13:01.695095+0530 DEBUG DB: <sqlmodel.orm.session.Session object at 0x1120974a0>
+2024-09-04T15:13:01.801153+0530 DEBUG Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/encoders.py", line 324, in jsonable_encoder
+    data = dict(obj)
+           ^^^^^^^^^
+ValueError: dictionary update sequence element #0 has length 5; 2 is required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/encoders.py", line 329, in jsonable_encoder
+    data = vars(obj)
+           ^^^^^^^^^
+TypeError: vars() argument must have __dict__ attribute
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/Product Fusion/db/db.py", line 35, in get_db
+    yield db
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/concurrency.py", line 27, in contextmanager_in_threadpool
+    yield await run_in_threadpool(cm.__enter__)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 296, in app
+    content = await serialize_response(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 180, in serialize_response
+    return jsonable_encoder(response_content)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/encoders.py", line 289, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+                    ^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/encoders.py", line 303, in jsonable_encoder
+    jsonable_encoder(
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/encoders.py", line 332, in jsonable_encoder
+    raise ValueError(errors) from e
+ValueError: [ValueError('dictionary update sequence element #0 has length 5; 2 is required'), TypeError('vars() argument must have __dict__ attribute')]
+
+2024-09-04T15:13:01.801153+0530 DEBUG Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/encoders.py", line 324, in jsonable_encoder
+    data = dict(obj)
+           ^^^^^^^^^
+ValueError: dictionary update sequence element #0 has length 5; 2 is required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/encoders.py", line 329, in jsonable_encoder
+    data = vars(obj)
+           ^^^^^^^^^
+TypeError: vars() argument must have __dict__ attribute
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/Product Fusion/db/db.py", line 35, in get_db
+    yield db
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/concurrency.py", line 27, in contextmanager_in_threadpool
+    yield await run_in_threadpool(cm.__enter__)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 296, in app
+    content = await serialize_response(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 180, in serialize_response
+    return jsonable_encoder(response_content)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/encoders.py", line 289, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+                    ^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/encoders.py", line 303, in jsonable_encoder
+    jsonable_encoder(
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/encoders.py", line 332, in jsonable_encoder
+    raise ValueError(errors) from e
+ValueError: [ValueError('dictionary update sequence element #0 has length 5; 2 is required'), TypeError('vars() argument must have __dict__ attribute')]
+
+2024-09-04T15:13:01.801706+0530 DEBUG Session Can't Be Created.
+2024-09-04T15:13:01.801706+0530 DEBUG Session Can't Be Created.
+2024-09-04T15:13:01.801877+0530 ERROR Error : [ValueError('dictionary update sequence element #0 has length 5; 2 is required'), TypeError('vars() argument must have __dict__ attribute')]
+2024-09-04T15:13:01.801877+0530 ERROR Error : [ValueError('dictionary update sequence element #0 has length 5; 2 is required'), TypeError('vars() argument must have __dict__ attribute')]
+2024-09-04T15:14:54.757997+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:14:54.802194+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:14:54.802194+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:15:23.203409+0530 DEBUG DB: <sqlmodel.orm.session.Session object at 0x1055067e0>
+2024-09-04T15:15:23.203409+0530 DEBUG DB: <sqlmodel.orm.session.Session object at 0x1055067e0>
+2024-09-04T15:15:23.214089+0530 DEBUG Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/Product Fusion/db/db.py", line 35, in get_db
+    yield db
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/concurrency.py", line 27, in contextmanager_in_threadpool
+    yield await run_in_threadpool(cm.__enter__)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/starlette/concurrency.py", line 42, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2177, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 859, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/Product Fusion/endpoints/stats_endpoint.py", line 11, in role_wise_users
+    result = db.query(Role.name, db.func.count(Member.id)).join(Member).group_by(Role.name).all()
+                                 ^^^^^^^
+AttributeError: 'Session' object has no attribute 'func'
+
+2024-09-04T15:15:23.214089+0530 DEBUG Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/Product Fusion/db/db.py", line 35, in get_db
+    yield db
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/concurrency.py", line 27, in contextmanager_in_threadpool
+    yield await run_in_threadpool(cm.__enter__)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/starlette/concurrency.py", line 42, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2177, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 859, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/Product Fusion/endpoints/stats_endpoint.py", line 11, in role_wise_users
+    result = db.query(Role.name, db.func.count(Member.id)).join(Member).group_by(Role.name).all()
+                                 ^^^^^^^
+AttributeError: 'Session' object has no attribute 'func'
+
+2024-09-04T15:15:23.214847+0530 DEBUG Session Can't Be Created.
+2024-09-04T15:15:23.214847+0530 DEBUG Session Can't Be Created.
+2024-09-04T15:15:23.215061+0530 ERROR Error : 'Session' object has no attribute 'func'
+2024-09-04T15:15:23.215061+0530 ERROR Error : 'Session' object has no attribute 'func'
+2024-09-04T15:15:42.990174+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:15:43.032052+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:15:43.032052+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:17:02.585546+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:17:02.627301+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:17:02.627301+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:17:10.644815+0530 DEBUG DB: <sqlmodel.orm.session.Session object at 0x103ace7e0>
+2024-09-04T15:17:10.644815+0530 DEBUG DB: <sqlmodel.orm.session.Session object at 0x103ace7e0>
+2024-09-04T15:17:10.729471+0530 DEBUG Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/encoders.py", line 324, in jsonable_encoder
+    data = dict(obj)
+           ^^^^^^^^^
+ValueError: dictionary update sequence element #0 has length 5; 2 is required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/encoders.py", line 329, in jsonable_encoder
+    data = vars(obj)
+           ^^^^^^^^^
+TypeError: vars() argument must have __dict__ attribute
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/Product Fusion/db/db.py", line 35, in get_db
+    yield db
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/concurrency.py", line 27, in contextmanager_in_threadpool
+    yield await run_in_threadpool(cm.__enter__)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 296, in app
+    content = await serialize_response(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 180, in serialize_response
+    return jsonable_encoder(response_content)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/encoders.py", line 289, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+                    ^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/encoders.py", line 303, in jsonable_encoder
+    jsonable_encoder(
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/encoders.py", line 332, in jsonable_encoder
+    raise ValueError(errors) from e
+ValueError: [ValueError('dictionary update sequence element #0 has length 5; 2 is required'), TypeError('vars() argument must have __dict__ attribute')]
+
+2024-09-04T15:17:10.729471+0530 DEBUG Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/encoders.py", line 324, in jsonable_encoder
+    data = dict(obj)
+           ^^^^^^^^^
+ValueError: dictionary update sequence element #0 has length 5; 2 is required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/encoders.py", line 329, in jsonable_encoder
+    data = vars(obj)
+           ^^^^^^^^^
+TypeError: vars() argument must have __dict__ attribute
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/Product Fusion/db/db.py", line 35, in get_db
+    yield db
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/concurrency.py", line 27, in contextmanager_in_threadpool
+    yield await run_in_threadpool(cm.__enter__)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 296, in app
+    content = await serialize_response(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 180, in serialize_response
+    return jsonable_encoder(response_content)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/encoders.py", line 289, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+                    ^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/encoders.py", line 303, in jsonable_encoder
+    jsonable_encoder(
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/encoders.py", line 332, in jsonable_encoder
+    raise ValueError(errors) from e
+ValueError: [ValueError('dictionary update sequence element #0 has length 5; 2 is required'), TypeError('vars() argument must have __dict__ attribute')]
+
+2024-09-04T15:17:10.729899+0530 DEBUG Session Can't Be Created.
+2024-09-04T15:17:10.729899+0530 DEBUG Session Can't Be Created.
+2024-09-04T15:17:10.730073+0530 ERROR Error : [ValueError('dictionary update sequence element #0 has length 5; 2 is required'), TypeError('vars() argument must have __dict__ attribute')]
+2024-09-04T15:17:10.730073+0530 ERROR Error : [ValueError('dictionary update sequence element #0 has length 5; 2 is required'), TypeError('vars() argument must have __dict__ attribute')]
+2024-09-04T15:19:35.514318+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:19:35.556800+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:19:35.556800+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:19:43.773222+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x107be65d0>
+2024-09-04T15:19:43.773222+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x107be65d0>
+2024-09-04T15:19:43.876150+0530 DEBUG Session can't be created.
+2024-09-04T15:19:43.876150+0530 DEBUG Session can't be created.
+2024-09-04T15:19:43.876450+0530 ERROR Unhandled error: [ValueError('dictionary update sequence element #0 has length 5; 2 is required'), TypeError('vars() argument must have __dict__ attribute')]
+2024-09-04T15:19:43.876450+0530 ERROR Unhandled error: [ValueError('dictionary update sequence element #0 has length 5; 2 is required'), TypeError('vars() argument must have __dict__ attribute')]
+2024-09-04T15:19:43.879413+0530 DEBUG Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/encoders.py", line 324, in jsonable_encoder
+    data = dict(obj)
+           ^^^^^^^^^
+ValueError: dictionary update sequence element #0 has length 5; 2 is required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/encoders.py", line 329, in jsonable_encoder
+    data = vars(obj)
+           ^^^^^^^^^
+TypeError: vars() argument must have __dict__ attribute
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/Product Fusion/db/db.py", line 32, in get_db
+    yield db
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/concurrency.py", line 27, in contextmanager_in_threadpool
+    yield await run_in_threadpool(cm.__enter__)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 296, in app
+    content = await serialize_response(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 180, in serialize_response
+    return jsonable_encoder(response_content)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/encoders.py", line 289, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+                    ^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/encoders.py", line 303, in jsonable_encoder
+    jsonable_encoder(
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/encoders.py", line 332, in jsonable_encoder
+    raise ValueError(errors) from e
+ValueError: [ValueError('dictionary update sequence element #0 has length 5; 2 is required'), TypeError('vars() argument must have __dict__ attribute')]
+
+2024-09-04T15:19:43.879413+0530 DEBUG Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/encoders.py", line 324, in jsonable_encoder
+    data = dict(obj)
+           ^^^^^^^^^
+ValueError: dictionary update sequence element #0 has length 5; 2 is required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/encoders.py", line 329, in jsonable_encoder
+    data = vars(obj)
+           ^^^^^^^^^
+TypeError: vars() argument must have __dict__ attribute
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/Product Fusion/db/db.py", line 32, in get_db
+    yield db
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/concurrency.py", line 27, in contextmanager_in_threadpool
+    yield await run_in_threadpool(cm.__enter__)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 296, in app
+    content = await serialize_response(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 180, in serialize_response
+    return jsonable_encoder(response_content)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/encoders.py", line 289, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+                    ^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/encoders.py", line 303, in jsonable_encoder
+    jsonable_encoder(
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/encoders.py", line 332, in jsonable_encoder
+    raise ValueError(errors) from e
+ValueError: [ValueError('dictionary update sequence element #0 has length 5; 2 is required'), TypeError('vars() argument must have __dict__ attribute')]
+
+2024-09-04T15:19:43.879782+0530 DEBUG Closing DB session.
+2024-09-04T15:19:43.879782+0530 DEBUG Closing DB session.
+2024-09-04T15:22:10.056180+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:22:10.097505+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:22:10.097505+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:22:19.492968+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x1034b5f70>
+2024-09-04T15:22:19.492968+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x1034b5f70>
+2024-09-04T15:22:19.597019+0530 DEBUG Closing DB session.
+2024-09-04T15:22:19.597019+0530 DEBUG Closing DB session.
+2024-09-04T15:22:54.926824+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:22:54.973009+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:22:54.973009+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:23:10.701004+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x108293530>
+2024-09-04T15:23:10.701004+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x108293530>
+2024-09-04T15:23:10.736399+0530 DEBUG Closing DB session.
+2024-09-04T15:23:10.736399+0530 DEBUG Closing DB session.
+2024-09-04T15:23:16.379989+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x1076ac440>
+2024-09-04T15:23:16.379989+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x1076ac440>
+2024-09-04T15:23:16.385237+0530 DEBUG Closing DB session.
+2024-09-04T15:23:16.385237+0530 DEBUG Closing DB session.
+2024-09-04T15:23:23.840509+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x1082b7470>
+2024-09-04T15:23:23.840509+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x1082b7470>
+2024-09-04T15:23:23.842234+0530 DEBUG Session can't be created.
+2024-09-04T15:23:23.842234+0530 DEBUG Session can't be created.
+2024-09-04T15:23:23.842687+0530 ERROR Unhandled error: Can't determine which FROM clause to join from, there are multiple FROMS which can join to this entity. Please use the .select_from() method to establish an explicit left side, as well as providing an explicit ON clause if not present already to help resolve the ambiguity.
+2024-09-04T15:23:23.842687+0530 ERROR Unhandled error: Can't determine which FROM clause to join from, there are multiple FROMS which can join to this entity. Please use the .select_from() method to establish an explicit left side, as well as providing an explicit ON clause if not present already to help resolve the ambiguity.
+2024-09-04T15:23:23.858532+0530 DEBUG Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/Product Fusion/db/db.py", line 32, in get_db
+    yield db
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/concurrency.py", line 27, in contextmanager_in_threadpool
+    yield await run_in_threadpool(cm.__enter__)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/starlette/concurrency.py", line 42, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2177, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 859, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/Product Fusion/endpoints/stats_endpoint.py", line 30, in org_role_wise_users
+    result = db.query(Organization.name, Role.name, func.count(Member.id)).join(Member).join(Role).group_by(Organization.name, Role.name).all()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/query.py", line 2673, in all
+    return self._iter().all()  # type: ignore
+           ^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/query.py", line 2827, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlmodel/orm/session.py", line 127, in execute
+    return super().execute(
+           ^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2362, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2247, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/context.py", line 293, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1418, in execute
+    return meth(
+           ^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1632, in _execute_clauseelement
+    compiled_sql, extracted_params, cache_hit = elem._compile_w_cache(
+                                                ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 703, in _compile_w_cache
+    compiled_sql = self._compiler(
+                   ^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 316, in _compiler
+    return dialect.statement_compiler(dialect, self, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/sql/compiler.py", line 1429, in __init__
+    Compiled.__init__(self, dialect, statement, **kwargs)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/sql/compiler.py", line 870, in __init__
+    self.string = self.process(self.statement, **compile_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/sql/compiler.py", line 915, in process
+    return obj._compiler_dispatch(self, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/sql/visitors.py", line 141, in _compiler_dispatch
+    return meth(self, **kw)  # type: ignore  # noqa: E501
+           ^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/sql/compiler.py", line 4679, in visit_select
+    compile_state = select_stmt._compile_state_factory(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/sql/base.py", line 683, in create_for_statement
+    return klass.create_for_statement(statement, compiler, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/context.py", line 1168, in create_for_statement
+    self._setup_for_generate()
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/context.py", line 1203, in _setup_for_generate
+    self._join(query._setup_joins, self._entities)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/context.py", line 1846, in _join
+    self._join_left_to_right(
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/context.py", line 1881, in _join_left_to_right
+    ) = self._join_determine_implicit_left_side(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/context.py", line 2036, in _join_determine_implicit_left_side
+    raise sa_exc.InvalidRequestError(
+sqlalchemy.exc.InvalidRequestError: Can't determine which FROM clause to join from, there are multiple FROMS which can join to this entity. Please use the .select_from() method to establish an explicit left side, as well as providing an explicit ON clause if not present already to help resolve the ambiguity.
+
+2024-09-04T15:23:23.858532+0530 DEBUG Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/Product Fusion/db/db.py", line 32, in get_db
+    yield db
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/concurrency.py", line 27, in contextmanager_in_threadpool
+    yield await run_in_threadpool(cm.__enter__)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/starlette/concurrency.py", line 42, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2177, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 859, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/Product Fusion/endpoints/stats_endpoint.py", line 30, in org_role_wise_users
+    result = db.query(Organization.name, Role.name, func.count(Member.id)).join(Member).join(Role).group_by(Organization.name, Role.name).all()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/query.py", line 2673, in all
+    return self._iter().all()  # type: ignore
+           ^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/query.py", line 2827, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlmodel/orm/session.py", line 127, in execute
+    return super().execute(
+           ^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2362, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2247, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/context.py", line 293, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1418, in execute
+    return meth(
+           ^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1632, in _execute_clauseelement
+    compiled_sql, extracted_params, cache_hit = elem._compile_w_cache(
+                                                ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 703, in _compile_w_cache
+    compiled_sql = self._compiler(
+                   ^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 316, in _compiler
+    return dialect.statement_compiler(dialect, self, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/sql/compiler.py", line 1429, in __init__
+    Compiled.__init__(self, dialect, statement, **kwargs)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/sql/compiler.py", line 870, in __init__
+    self.string = self.process(self.statement, **compile_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/sql/compiler.py", line 915, in process
+    return obj._compiler_dispatch(self, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/sql/visitors.py", line 141, in _compiler_dispatch
+    return meth(self, **kw)  # type: ignore  # noqa: E501
+           ^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/sql/compiler.py", line 4679, in visit_select
+    compile_state = select_stmt._compile_state_factory(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/sql/base.py", line 683, in create_for_statement
+    return klass.create_for_statement(statement, compiler, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/context.py", line 1168, in create_for_statement
+    self._setup_for_generate()
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/context.py", line 1203, in _setup_for_generate
+    self._join(query._setup_joins, self._entities)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/context.py", line 1846, in _join
+    self._join_left_to_right(
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/context.py", line 1881, in _join_left_to_right
+    ) = self._join_determine_implicit_left_side(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/context.py", line 2036, in _join_determine_implicit_left_side
+    raise sa_exc.InvalidRequestError(
+sqlalchemy.exc.InvalidRequestError: Can't determine which FROM clause to join from, there are multiple FROMS which can join to this entity. Please use the .select_from() method to establish an explicit left side, as well as providing an explicit ON clause if not present already to help resolve the ambiguity.
+
+2024-09-04T15:23:23.859442+0530 DEBUG Closing DB session.
+2024-09-04T15:23:23.859442+0530 DEBUG Closing DB session.
+2024-09-04T15:24:34.894387+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:24:34.934358+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:24:34.934358+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:24:40.086895+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x104dd1850>
+2024-09-04T15:24:40.086895+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x104dd1850>
+2024-09-04T15:24:40.138498+0530 DEBUG Closing DB session.
+2024-09-04T15:24:40.138498+0530 DEBUG Closing DB session.
+2024-09-04T15:25:29.042166+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:25:29.085169+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:25:29.085169+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:27:14.904135+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:27:14.949078+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:27:14.949078+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:30:26.058954+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:30:26.099540+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:30:26.099540+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:32:25.925637+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:32:25.965379+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:32:25.965379+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:35:11.015253+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:35:11.056824+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:35:11.056824+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:35:24.459980+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x108017f80>
+2024-09-04T15:35:24.459980+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x108017f80>
+2024-09-04T15:35:24.541535+0530 DEBUG Closing DB session.
+2024-09-04T15:35:24.541535+0530 DEBUG Closing DB session.
+2024-09-04T15:35:33.615846+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x1089ca000>
+2024-09-04T15:35:33.615846+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x1089ca000>
+2024-09-04T15:35:33.628991+0530 DEBUG Closing DB session.
+2024-09-04T15:35:33.628991+0530 DEBUG Closing DB session.
+2024-09-04T15:37:07.748336+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:37:07.790666+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:37:07.790666+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:37:14.374403+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x1081367e0>
+2024-09-04T15:37:14.374403+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x1081367e0>
+2024-09-04T15:37:14.497319+0530 DEBUG Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/MySQLdb/cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/MySQLdb/cursors.py", line 330, in _query
+    db.query(q)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/MySQLdb/connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1048, "Column 'org_id' cannot be null")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/Product Fusion/endpoints/admin_endpoints.py", line 61, in update_member_role
+    db.commit()
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2028, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 4352, in flush
+    self._flush(objects)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 4487, in _flush
+    with util.safe_reraise():
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 4448, in _flush
+    flush_context.execute()
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1418, in execute
+    return meth(
+           ^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/MySQLdb/cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/MySQLdb/cursors.py", line 330, in _query
+    db.query(q)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/MySQLdb/connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+sqlalchemy.exc.IntegrityError: (MySQLdb.IntegrityError) (1048, "Column 'org_id' cannot be null")
+[SQL: INSERT INTO `role` (name, description, org_id) VALUES (%s, %s, %s)]
+[parameters: ('Member', None, None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+2024-09-04T15:37:14.497319+0530 DEBUG Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/MySQLdb/cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/MySQLdb/cursors.py", line 330, in _query
+    db.query(q)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/MySQLdb/connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1048, "Column 'org_id' cannot be null")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/Product Fusion/endpoints/admin_endpoints.py", line 61, in update_member_role
+    db.commit()
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2028, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 4352, in flush
+    self._flush(objects)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 4487, in _flush
+    with util.safe_reraise():
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 4448, in _flush
+    flush_context.execute()
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1418, in execute
+    return meth(
+           ^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/MySQLdb/cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/MySQLdb/cursors.py", line 330, in _query
+    db.query(q)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/MySQLdb/connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+sqlalchemy.exc.IntegrityError: (MySQLdb.IntegrityError) (1048, "Column 'org_id' cannot be null")
+[SQL: INSERT INTO `role` (name, description, org_id) VALUES (%s, %s, %s)]
+[parameters: ('Member', None, None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+2024-09-04T15:37:14.498515+0530 DEBUG Closing DB session.
+2024-09-04T15:37:14.498515+0530 DEBUG Closing DB session.
+2024-09-04T15:38:21.397738+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:38:21.438688+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:38:21.438688+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:38:31.217908+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x104a97bf0>
+2024-09-04T15:38:31.217908+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x104a97bf0>
+2024-09-04T15:38:31.266378+0530 DEBUG Session can't be created.
+2024-09-04T15:38:31.266378+0530 DEBUG Session can't be created.
+2024-09-04T15:38:31.266677+0530 ERROR Unhandled error: 'str' object has no attribute '_sa_instance_state'
+2024-09-04T15:38:31.266677+0530 ERROR Unhandled error: 'str' object has no attribute '_sa_instance_state'
+2024-09-04T15:38:31.272758+0530 DEBUG Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/Product Fusion/db/db.py", line 32, in get_db
+    yield db
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/concurrency.py", line 27, in contextmanager_in_threadpool
+    yield await run_in_threadpool(cm.__enter__)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/starlette/concurrency.py", line 42, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2177, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 859, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/Product Fusion/endpoints/admin_endpoints.py", line 48, in update_member_role
+    member.role = new_role
+    ^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlmodel/main.py", line 820, in __setattr__
+    set_attribute(self, name, value)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/attributes.py", line 2760, in set_attribute
+    state.manager[key].impl.set(state, dict_, value, initiator)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/attributes.py", line 1467, in set
+    value = self.fire_replace_event(state, dict_, value, old, initiator)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/attributes.py", line 1506, in fire_replace_event
+    value = fn(
+            ^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/unitofwork.py", line 120, in set_
+    newvalue_state = attributes.instance_state(newvalue)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute '_sa_instance_state'
+
+2024-09-04T15:38:31.272758+0530 DEBUG Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/Product Fusion/db/db.py", line 32, in get_db
+    yield db
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/concurrency.py", line 27, in contextmanager_in_threadpool
+    yield await run_in_threadpool(cm.__enter__)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/starlette/concurrency.py", line 42, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2177, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 859, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/Product Fusion/endpoints/admin_endpoints.py", line 48, in update_member_role
+    member.role = new_role
+    ^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlmodel/main.py", line 820, in __setattr__
+    set_attribute(self, name, value)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/attributes.py", line 2760, in set_attribute
+    state.manager[key].impl.set(state, dict_, value, initiator)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/attributes.py", line 1467, in set
+    value = self.fire_replace_event(state, dict_, value, old, initiator)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/attributes.py", line 1506, in fire_replace_event
+    value = fn(
+            ^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/unitofwork.py", line 120, in set_
+    newvalue_state = attributes.instance_state(newvalue)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute '_sa_instance_state'
+
+2024-09-04T15:38:31.273420+0530 DEBUG Closing DB session.
+2024-09-04T15:38:31.273420+0530 DEBUG Closing DB session.
+2024-09-04T15:39:22.827944+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:39:22.871846+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:39:22.871846+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:39:29.114769+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x1081bf860>
+2024-09-04T15:39:29.114769+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x1081bf860>
+2024-09-04T15:39:29.161406+0530 DEBUG Closing DB session.
+2024-09-04T15:39:29.161406+0530 DEBUG Closing DB session.
+2024-09-04T15:39:35.410403+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x10691d160>
+2024-09-04T15:39:35.410403+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x10691d160>
+2024-09-04T15:39:35.417670+0530 DEBUG Session can't be created.
+2024-09-04T15:39:35.417670+0530 DEBUG Session can't be created.
+2024-09-04T15:39:35.418243+0530 ERROR Unhandled error: 'str' object has no attribute '_sa_instance_state'
+2024-09-04T15:39:35.418243+0530 ERROR Unhandled error: 'str' object has no attribute '_sa_instance_state'
+2024-09-04T15:39:35.428888+0530 DEBUG Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/Product Fusion/db/db.py", line 32, in get_db
+    yield db
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/concurrency.py", line 27, in contextmanager_in_threadpool
+    yield await run_in_threadpool(cm.__enter__)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/starlette/concurrency.py", line 42, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2177, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 859, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/Product Fusion/endpoints/admin_endpoints.py", line 49, in update_member_role
+    member.role = new_role
+    ^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlmodel/main.py", line 820, in __setattr__
+    set_attribute(self, name, value)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/attributes.py", line 2760, in set_attribute
+    state.manager[key].impl.set(state, dict_, value, initiator)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/attributes.py", line 1467, in set
+    value = self.fire_replace_event(state, dict_, value, old, initiator)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/attributes.py", line 1506, in fire_replace_event
+    value = fn(
+            ^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/unitofwork.py", line 120, in set_
+    newvalue_state = attributes.instance_state(newvalue)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute '_sa_instance_state'
+
+2024-09-04T15:39:35.428888+0530 DEBUG Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/Product Fusion/db/db.py", line 32, in get_db
+    yield db
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/concurrency.py", line 27, in contextmanager_in_threadpool
+    yield await run_in_threadpool(cm.__enter__)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/starlette/concurrency.py", line 42, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2177, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 859, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/Product Fusion/endpoints/admin_endpoints.py", line 49, in update_member_role
+    member.role = new_role
+    ^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlmodel/main.py", line 820, in __setattr__
+    set_attribute(self, name, value)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/attributes.py", line 2760, in set_attribute
+    state.manager[key].impl.set(state, dict_, value, initiator)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/attributes.py", line 1467, in set
+    value = self.fire_replace_event(state, dict_, value, old, initiator)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/attributes.py", line 1506, in fire_replace_event
+    value = fn(
+            ^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/unitofwork.py", line 120, in set_
+    newvalue_state = attributes.instance_state(newvalue)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute '_sa_instance_state'
+
+2024-09-04T15:39:35.429296+0530 DEBUG Closing DB session.
+2024-09-04T15:39:35.429296+0530 DEBUG Closing DB session.
+2024-09-04T15:44:32.478409+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:44:32.519063+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:44:32.519063+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:44:43.191499+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x102900fe0>
+2024-09-04T15:44:43.191499+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x102900fe0>
+2024-09-04T15:44:43.285280+0530 DEBUG Closing DB session.
+2024-09-04T15:44:43.285280+0530 DEBUG Closing DB session.
+2024-09-04T15:46:50.597916+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:46:50.638193+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:46:50.638193+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:49:00.653513+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:49:00.693952+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:49:00.693952+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:49:13.213423+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x105393e00>
+2024-09-04T15:49:13.213423+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x105393e00>
+2024-09-04T15:49:13.319088+0530 DEBUG Session can't be created.
+2024-09-04T15:49:13.319088+0530 DEBUG Session can't be created.
+2024-09-04T15:49:13.319512+0530 ERROR Unhandled error: (MySQLdb.IntegrityError) (1048, "Column 'org_id' cannot be null")
+[SQL: INSERT INTO `role` (name, description, org_id) VALUES (%s, %s, %s)]
+[parameters: ('Admin', None, None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-09-04T15:49:13.319512+0530 ERROR Unhandled error: (MySQLdb.IntegrityError) (1048, "Column 'org_id' cannot be null")
+[SQL: INSERT INTO `role` (name, description, org_id) VALUES (%s, %s, %s)]
+[parameters: ('Admin', None, None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-09-04T15:49:13.332176+0530 DEBUG Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/MySQLdb/cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/MySQLdb/cursors.py", line 330, in _query
+    db.query(q)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/MySQLdb/connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1048, "Column 'org_id' cannot be null")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/Product Fusion/db/db.py", line 32, in get_db
+    yield db
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/concurrency.py", line 27, in contextmanager_in_threadpool
+    yield await run_in_threadpool(cm.__enter__)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/starlette/concurrency.py", line 42, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2177, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 859, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/Product Fusion/endpoints/admin_endpoints.py", line 54, in update_member_role
+    db.commit()
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2028, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 4352, in flush
+    self._flush(objects)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 4487, in _flush
+    with util.safe_reraise():
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 4448, in _flush
+    flush_context.execute()
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1418, in execute
+    return meth(
+           ^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/MySQLdb/cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/MySQLdb/cursors.py", line 330, in _query
+    db.query(q)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/MySQLdb/connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+sqlalchemy.exc.IntegrityError: (MySQLdb.IntegrityError) (1048, "Column 'org_id' cannot be null")
+[SQL: INSERT INTO `role` (name, description, org_id) VALUES (%s, %s, %s)]
+[parameters: ('Admin', None, None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+2024-09-04T15:49:13.332176+0530 DEBUG Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/MySQLdb/cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/MySQLdb/cursors.py", line 330, in _query
+    db.query(q)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/MySQLdb/connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1048, "Column 'org_id' cannot be null")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/Product Fusion/db/db.py", line 32, in get_db
+    yield db
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/concurrency.py", line 27, in contextmanager_in_threadpool
+    yield await run_in_threadpool(cm.__enter__)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/starlette/concurrency.py", line 42, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2177, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 859, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/Product Fusion/endpoints/admin_endpoints.py", line 54, in update_member_role
+    db.commit()
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2028, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 4352, in flush
+    self._flush(objects)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 4487, in _flush
+    with util.safe_reraise():
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 4448, in _flush
+    flush_context.execute()
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1418, in execute
+    return meth(
+           ^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/MySQLdb/cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/MySQLdb/cursors.py", line 330, in _query
+    db.query(q)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/MySQLdb/connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+sqlalchemy.exc.IntegrityError: (MySQLdb.IntegrityError) (1048, "Column 'org_id' cannot be null")
+[SQL: INSERT INTO `role` (name, description, org_id) VALUES (%s, %s, %s)]
+[parameters: ('Admin', None, None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+2024-09-04T15:49:13.332598+0530 DEBUG Closing DB session.
+2024-09-04T15:49:13.332598+0530 DEBUG Closing DB session.
+2024-09-04T15:54:43.129460+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:54:43.175312+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:54:43.175312+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:54:53.564488+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x105efa7e0>
+2024-09-04T15:54:53.564488+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x105efa7e0>
+2024-09-04T15:54:53.671925+0530 DEBUG Session can't be created.
+2024-09-04T15:54:53.671925+0530 DEBUG Session can't be created.
+2024-09-04T15:54:53.672233+0530 ERROR Unhandled error: (MySQLdb.IntegrityError) (1048, "Column 'org_id' cannot be null")
+[SQL: INSERT INTO `role` (name, description, org_id) VALUES (%s, %s, %s)]
+[parameters: ('Admin', None, None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-09-04T15:54:53.672233+0530 ERROR Unhandled error: (MySQLdb.IntegrityError) (1048, "Column 'org_id' cannot be null")
+[SQL: INSERT INTO `role` (name, description, org_id) VALUES (%s, %s, %s)]
+[parameters: ('Admin', None, None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-09-04T15:54:53.685597+0530 DEBUG Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/MySQLdb/cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/MySQLdb/cursors.py", line 330, in _query
+    db.query(q)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/MySQLdb/connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1048, "Column 'org_id' cannot be null")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/Product Fusion/db/db.py", line 32, in get_db
+    yield db
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/concurrency.py", line 27, in contextmanager_in_threadpool
+    yield await run_in_threadpool(cm.__enter__)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/starlette/concurrency.py", line 42, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2177, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 859, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/Product Fusion/endpoints/admin_endpoints.py", line 55, in update_member_role
+    db.commit()
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2028, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 4352, in flush
+    self._flush(objects)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 4487, in _flush
+    with util.safe_reraise():
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 4448, in _flush
+    flush_context.execute()
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1418, in execute
+    return meth(
+           ^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/MySQLdb/cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/MySQLdb/cursors.py", line 330, in _query
+    db.query(q)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/MySQLdb/connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+sqlalchemy.exc.IntegrityError: (MySQLdb.IntegrityError) (1048, "Column 'org_id' cannot be null")
+[SQL: INSERT INTO `role` (name, description, org_id) VALUES (%s, %s, %s)]
+[parameters: ('Admin', None, None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+2024-09-04T15:54:53.685597+0530 DEBUG Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/MySQLdb/cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/MySQLdb/cursors.py", line 330, in _query
+    db.query(q)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/MySQLdb/connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1048, "Column 'org_id' cannot be null")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/Product Fusion/db/db.py", line 32, in get_db
+    yield db
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/concurrency.py", line 27, in contextmanager_in_threadpool
+    yield await run_in_threadpool(cm.__enter__)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/starlette/concurrency.py", line 42, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2177, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 859, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/Product Fusion/endpoints/admin_endpoints.py", line 55, in update_member_role
+    db.commit()
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2028, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 4352, in flush
+    self._flush(objects)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 4487, in _flush
+    with util.safe_reraise():
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 4448, in _flush
+    flush_context.execute()
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/orm/persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1418, in execute
+    return meth(
+           ^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/MySQLdb/cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/MySQLdb/cursors.py", line 330, in _query
+    db.query(q)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/MySQLdb/connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+sqlalchemy.exc.IntegrityError: (MySQLdb.IntegrityError) (1048, "Column 'org_id' cannot be null")
+[SQL: INSERT INTO `role` (name, description, org_id) VALUES (%s, %s, %s)]
+[parameters: ('Admin', None, None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+2024-09-04T15:54:53.686138+0530 DEBUG Closing DB session.
+2024-09-04T15:54:53.686138+0530 DEBUG Closing DB session.
+2024-09-04T15:55:56.987488+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:55:57.027860+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:55:57.027860+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:57:38.959513+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:57:38.999441+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:57:38.999441+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T15:57:46.858740+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x1078ba810>
+2024-09-04T15:57:46.858740+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x1078ba810>
+2024-09-04T15:57:47.002885+0530 DEBUG Closing DB session.
+2024-09-04T15:57:47.002885+0530 DEBUG Closing DB session.
+2024-09-04T16:01:05.757928+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x107a1be00>
+2024-09-04T16:01:05.757928+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x107a1be00>
+2024-09-04T16:01:05.820623+0530 DEBUG Closing DB session.
+2024-09-04T16:01:05.820623+0530 DEBUG Closing DB session.
+2024-09-04T16:02:41.332644+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x1081ac7d0>
+2024-09-04T16:02:41.332644+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x1081ac7d0>
+2024-09-04T16:02:43.946913+0530 DEBUG Closing DB session.
+2024-09-04T16:02:43.946913+0530 DEBUG Closing DB session.
+2024-09-04T16:03:24.188682+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:03:24.228534+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:03:24.228534+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:07:14.105113+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:07:14.149083+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:07:14.149083+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:08:16.456516+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x1040b81d0>
+2024-09-04T16:08:16.456516+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x1040b81d0>
+2024-09-04T16:08:16.599431+0530 DEBUG Closing DB session.
+2024-09-04T16:08:16.599431+0530 DEBUG Closing DB session.
+2024-09-04T16:09:35.704034+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:09:35.743743+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:09:35.743743+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:12:46.743900+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:12:46.783919+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:12:46.783919+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:13:21.511284+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:13:21.572475+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:13:21.572475+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:14:01.443753+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:14:01.482828+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:14:01.482828+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:16:26.199107+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:16:26.239669+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:16:26.239669+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:16:56.581036+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:16:56.622751+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:16:56.622751+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:17:54.729795+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:17:54.770179+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:17:54.770179+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:18:06.931656+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x11007fcb0>
+2024-09-04T16:18:06.931656+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x11007fcb0>
+2024-09-04T16:18:07.054100+0530 DEBUG Closing DB session.
+2024-09-04T16:18:07.054100+0530 DEBUG Closing DB session.
+2024-09-04T16:18:35.692741+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:18:35.732883+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:18:35.732883+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:18:45.287282+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x106a87fb0>
+2024-09-04T16:18:45.287282+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x106a87fb0>
+2024-09-04T16:18:45.419761+0530 DEBUG Closing DB session.
+2024-09-04T16:18:45.419761+0530 DEBUG Closing DB session.
+2024-09-04T16:23:25.289652+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:23:25.333650+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:23:25.333650+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:23:30.961055+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x1087d75f0>
+2024-09-04T16:23:30.961055+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x1087d75f0>
+2024-09-04T16:23:31.040429+0530 DEBUG Closing DB session.
+2024-09-04T16:23:31.040429+0530 DEBUG Closing DB session.
+2024-09-04T16:23:38.561877+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x1088afdd0>
+2024-09-04T16:23:38.561877+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x1088afdd0>
+2024-09-04T16:23:38.571537+0530 DEBUG Closing DB session.
+2024-09-04T16:23:38.571537+0530 DEBUG Closing DB session.
+2024-09-04T16:23:43.895937+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x108875040>
+2024-09-04T16:23:43.895937+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x108875040>
+2024-09-04T16:23:43.902856+0530 DEBUG Closing DB session.
+2024-09-04T16:23:43.902856+0530 DEBUG Closing DB session.
+2024-09-04T16:23:57.409994+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x107ded880>
+2024-09-04T16:23:57.409994+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x107ded880>
+2024-09-04T16:23:57.416066+0530 DEBUG Closing DB session.
+2024-09-04T16:23:57.416066+0530 DEBUG Closing DB session.
+2024-09-04T16:24:01.424976+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x1088932c0>
+2024-09-04T16:24:01.424976+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x1088932c0>
+2024-09-04T16:24:01.428557+0530 DEBUG Closing DB session.
+2024-09-04T16:24:01.428557+0530 DEBUG Closing DB session.
+2024-09-04T16:25:41.700581+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x1088936b0>
+2024-09-04T16:25:41.700581+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x1088936b0>
+2024-09-04T16:25:44.344896+0530 DEBUG Closing DB session.
+2024-09-04T16:25:44.344896+0530 DEBUG Closing DB session.
+2024-09-04T16:25:52.643489+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x107d2ed50>
+2024-09-04T16:25:52.643489+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x107d2ed50>
+2024-09-04T16:25:52.655606+0530 DEBUG Closing DB session.
+2024-09-04T16:25:52.655606+0530 DEBUG Closing DB session.
+2024-09-04T16:25:57.451313+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x1088932c0>
+2024-09-04T16:25:57.451313+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x1088932c0>
+2024-09-04T16:25:57.472404+0530 DEBUG Closing DB session.
+2024-09-04T16:25:57.472404+0530 DEBUG Closing DB session.
+2024-09-04T16:26:02.908958+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x108807170>
+2024-09-04T16:26:02.908958+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x108807170>
+2024-09-04T16:26:02.913172+0530 DEBUG Closing DB session.
+2024-09-04T16:26:02.913172+0530 DEBUG Closing DB session.
+2024-09-04T16:26:06.762433+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x108b08170>
+2024-09-04T16:26:06.762433+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x108b08170>
+2024-09-04T16:26:06.766054+0530 DEBUG Closing DB session.
+2024-09-04T16:26:06.766054+0530 DEBUG Closing DB session.
+2024-09-04T16:26:11.584827+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x108b3ab10>
+2024-09-04T16:26:11.584827+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x108b3ab10>
+2024-09-04T16:26:11.589984+0530 DEBUG Closing DB session.
+2024-09-04T16:26:11.589984+0530 DEBUG Closing DB session.
+2024-09-04T16:26:42.258629+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:26:42.301734+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:26:42.301734+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:30:33.743241+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:30:33.785073+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:30:33.785073+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:30:54.359414+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:30:54.400552+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:30:54.400552+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:31:35.730426+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:31:35.774618+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:31:35.774618+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:31:55.282823+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:31:55.321399+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:31:55.321399+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:33:03.260126+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:33:03.301297+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:33:03.301297+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:34:33.343237+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:34:33.383986+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:34:33.383986+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:36:19.659167+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:36:19.699593+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:36:19.699593+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:37:26.291391+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:37:26.331924+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:37:26.331924+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:40:12.619787+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:40:12.662240+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:40:12.662240+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:41:58.227827+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:41:58.268651+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:41:58.268651+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:44:18.336420+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:44:18.377973+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:44:18.377973+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:44:40.798180+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:44:40.839028+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:44:40.839028+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:44:42.577740+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:44:42.608984+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:44:42.608984+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:45:23.918759+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:45:23.963767+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:45:23.963767+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:56:58.475972+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:56:58.917866+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:56:58.953286+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:56:58.953286+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T16:57:40.611958+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x111d77740>
+2024-09-04T16:57:40.611958+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x111d77740>
+2024-09-04T16:57:40.706881+0530 DEBUG Unexpected error: 404: User not found
+2024-09-04T16:57:40.706881+0530 DEBUG Unexpected error: 404: User not found
+2024-09-04T16:57:40.707394+0530 DEBUG Closing DB session.
+2024-09-04T16:57:40.707394+0530 DEBUG Closing DB session.
+2024-09-04T16:59:21.303556+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x111cd4740>
+2024-09-04T16:59:21.303556+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x111cd4740>
+2024-09-04T16:59:22.550643+0530 DEBUG Closing DB session.
+2024-09-04T16:59:22.550643+0530 DEBUG Closing DB session.
+2024-09-04T17:03:44.244023+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:03:44.285280+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:03:44.285280+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:10:46.819316+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:10:46.859794+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:10:46.859794+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:11:13.119150+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:11:13.158951+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:11:13.158951+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:13:43.604711+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x107e6ea20>
+2024-09-04T17:13:43.604711+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x107e6ea20>
+2024-09-04T17:13:43.730813+0530 DEBUG Unexpected error: 400: Email already registered
+2024-09-04T17:13:43.730813+0530 DEBUG Unexpected error: 400: Email already registered
+2024-09-04T17:13:43.731297+0530 DEBUG Closing DB session.
+2024-09-04T17:13:43.731297+0530 DEBUG Closing DB session.
+2024-09-04T17:14:43.134406+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:14:43.176388+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:14:43.176388+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:14:48.799353+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x108c2fc80>
+2024-09-04T17:14:48.799353+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x108c2fc80>
+2024-09-04T17:14:48.923232+0530 DEBUG Closing DB session.
+2024-09-04T17:14:48.923232+0530 DEBUG Closing DB session.
+2024-09-04T17:16:02.187028+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x108cb9c10>
+2024-09-04T17:16:02.187028+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x108cb9c10>
+2024-09-04T17:16:02.519272+0530 DEBUG Database error: (MySQLdb.DataError) (1265, "Data truncated for column 'created_at' at row 1")
+[SQL: INSERT INTO user (email, password, profile, status, settings, created_at, updated_at) VALUES (%s, %s, %s, %s, %s, %s, %s)]
+[parameters: ('sayantan.guha@aot.edu.in', '$2b$12$DmzADVhsSxXtNZApkNpkCeDjx2NqXiZZZYZRTqu2xLBOW7Jxze/q6', '{}', 0, '{}', datetime.datetime(2024, 9, 4, 17, 16, 2, 205143), None)]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-09-04T17:16:02.519272+0530 DEBUG Database error: (MySQLdb.DataError) (1265, "Data truncated for column 'created_at' at row 1")
+[SQL: INSERT INTO user (email, password, profile, status, settings, created_at, updated_at) VALUES (%s, %s, %s, %s, %s, %s, %s)]
+[parameters: ('sayantan.guha@aot.edu.in', '$2b$12$DmzADVhsSxXtNZApkNpkCeDjx2NqXiZZZYZRTqu2xLBOW7Jxze/q6', '{}', 0, '{}', datetime.datetime(2024, 9, 4, 17, 16, 2, 205143), None)]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-09-04T17:16:02.519716+0530 DEBUG Closing DB session.
+2024-09-04T17:16:02.519716+0530 DEBUG Closing DB session.
+2024-09-04T17:21:57.761153+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:21:57.802519+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:21:57.802519+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:31:14.661699+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x106077d10>
+2024-09-04T17:31:14.661699+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x106077d10>
+2024-09-04T17:31:15.534326+0530 DEBUG Unexpected error: JSONResponse.__init__() got an unexpected keyword argument 'detail'
+2024-09-04T17:31:15.534326+0530 DEBUG Unexpected error: JSONResponse.__init__() got an unexpected keyword argument 'detail'
+2024-09-04T17:31:15.535562+0530 DEBUG Closing DB session.
+2024-09-04T17:31:15.535562+0530 DEBUG Closing DB session.
+2024-09-04T17:34:14.641725+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:34:14.682431+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:34:14.682431+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:34:21.233976+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x1085f5580>
+2024-09-04T17:34:21.233976+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x1085f5580>
+2024-09-04T17:34:21.352002+0530 DEBUG Unexpected error: HTTPException.__init__() got an unexpected keyword argument 'content'
+2024-09-04T17:34:21.352002+0530 DEBUG Unexpected error: HTTPException.__init__() got an unexpected keyword argument 'content'
+2024-09-04T17:34:21.352674+0530 DEBUG Session can't be created.
+2024-09-04T17:34:21.352674+0530 DEBUG Session can't be created.
+2024-09-04T17:34:21.352909+0530 ERROR Unhandled error: HTTPException.__init__() got an unexpected keyword argument 'content'
+2024-09-04T17:34:21.352909+0530 ERROR Unhandled error: HTTPException.__init__() got an unexpected keyword argument 'content'
+2024-09-04T17:34:21.356968+0530 DEBUG Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/Product Fusion/endpoints/member_endpoints.py", line 29, in signup
+    raise HTTPException(status_code=HTTP_400_BAD_REQUEST, content="Email already registered")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: HTTPException.__init__() got an unexpected keyword argument 'content'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/Product Fusion/db/db.py", line 32, in get_db
+    yield db
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/concurrency.py", line 27, in contextmanager_in_threadpool
+    yield await run_in_threadpool(cm.__enter__)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/starlette/concurrency.py", line 42, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2177, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 859, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/Product Fusion/endpoints/member_endpoints.py", line 69, in signup
+    raise HTTPException(status_code=HTTP_500_INTERNAL_SERVER_ERROR, content="An unexpected error occurred.")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: HTTPException.__init__() got an unexpected keyword argument 'content'
+
+2024-09-04T17:34:21.356968+0530 DEBUG Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/Product Fusion/endpoints/member_endpoints.py", line 29, in signup
+    raise HTTPException(status_code=HTTP_400_BAD_REQUEST, content="Email already registered")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: HTTPException.__init__() got an unexpected keyword argument 'content'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sayantanguha/Desktop/Product Fusion/db/db.py", line 32, in get_db
+    yield db
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/concurrency.py", line 27, in contextmanager_in_threadpool
+    yield await run_in_threadpool(cm.__enter__)
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/starlette/concurrency.py", line 42, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2177, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/trace/trace_env/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 859, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sayantanguha/Desktop/Product Fusion/endpoints/member_endpoints.py", line 69, in signup
+    raise HTTPException(status_code=HTTP_500_INTERNAL_SERVER_ERROR, content="An unexpected error occurred.")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: HTTPException.__init__() got an unexpected keyword argument 'content'
+
+2024-09-04T17:34:21.357668+0530 DEBUG Closing DB session.
+2024-09-04T17:34:21.357668+0530 DEBUG Closing DB session.
+2024-09-04T17:34:51.557576+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x1086a71d0>
+2024-09-04T17:34:51.557576+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x1086a71d0>
+2024-09-04T17:34:51.578190+0530 DEBUG Closing DB session.
+2024-09-04T17:34:51.578190+0530 DEBUG Closing DB session.
+2024-09-04T17:38:08.142723+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:38:08.183409+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:38:08.183409+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:38:51.832954+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:38:51.874154+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:38:51.874154+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:38:59.210081+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x106235dc0>
+2024-09-04T17:38:59.210081+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x106235dc0>
+2024-09-04T17:38:59.296916+0530 DEBUG Closing DB session.
+2024-09-04T17:38:59.296916+0530 DEBUG Closing DB session.
+2024-09-04T17:39:45.314533+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:39:45.355367+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:39:45.355367+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:40:13.414887+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:40:13.454271+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:40:13.454271+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:40:46.191375+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x108d5cfb0>
+2024-09-04T17:40:46.191375+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x108d5cfb0>
+2024-09-04T17:40:47.612202+0530 DEBUG Closing DB session.
+2024-09-04T17:40:47.612202+0530 DEBUG Closing DB session.
+2024-09-04T17:41:53.449340+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:41:53.499721+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:41:53.499721+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:41:58.895389+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:41:58.925267+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:41:58.925267+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:42:45.673791+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:42:45.715663+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:42:45.715663+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:48:41.650560+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x108d24e90>
+2024-09-04T17:48:41.650560+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x108d24e90>
+2024-09-04T17:48:43.008630+0530 DEBUG Closing DB session.
+2024-09-04T17:48:43.008630+0530 DEBUG Closing DB session.
+2024-09-04T17:49:50.556995+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x108cfa150>
+2024-09-04T17:49:50.556995+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x108cfa150>
+2024-09-04T17:49:50.669399+0530 DEBUG Closing DB session.
+2024-09-04T17:49:50.669399+0530 DEBUG Closing DB session.
+2024-09-04T17:51:22.093995+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x109a06e70>
+2024-09-04T17:51:22.093995+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x109a06e70>
+2024-09-04T17:51:23.497035+0530 DEBUG Closing DB session.
+2024-09-04T17:51:23.497035+0530 DEBUG Closing DB session.
+2024-09-04T17:52:16.234042+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x108eade80>
+2024-09-04T17:52:16.234042+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x108eade80>
+2024-09-04T17:52:16.508329+0530 DEBUG Unexpected error: send_email() takes 3 positional arguments but 5 were given
+2024-09-04T17:52:16.508329+0530 DEBUG Unexpected error: send_email() takes 3 positional arguments but 5 were given
+2024-09-04T17:52:16.508760+0530 DEBUG Closing DB session.
+2024-09-04T17:52:16.508760+0530 DEBUG Closing DB session.
+2024-09-04T17:53:51.349476+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:53:51.390991+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:53:51.390991+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:53:56.522346+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:53:56.569060+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:53:56.569060+0530 SUCCESS Bankend Server Startup Successful
+2024-09-04T17:54:00.051729+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x110e55760>
+2024-09-04T17:54:00.051729+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x110e55760>
+2024-09-04T17:54:01.530429+0530 DEBUG Closing DB session.
+2024-09-04T17:54:01.530429+0530 DEBUG Closing DB session.
+2024-09-04T17:54:44.679308+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x1108a3e00>
+2024-09-04T17:54:44.679308+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x1108a3e00>
+2024-09-04T17:54:44.700121+0530 DEBUG Closing DB session.
+2024-09-04T17:54:44.700121+0530 DEBUG Closing DB session.
+2024-09-04T17:55:05.428667+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x110eca2d0>
+2024-09-04T17:55:05.428667+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x110eca2d0>
+2024-09-04T17:55:05.436746+0530 DEBUG Closing DB session.
+2024-09-04T17:55:05.436746+0530 DEBUG Closing DB session.
+2024-09-04T17:55:35.963111+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x110ecb410>
+2024-09-04T17:55:35.963111+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x110ecb410>
+2024-09-04T17:55:35.994479+0530 DEBUG Closing DB session.
+2024-09-04T17:55:35.994479+0530 DEBUG Closing DB session.
+2024-09-04T17:56:05.269919+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x107f28710>
+2024-09-04T17:56:05.269919+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x107f28710>
+2024-09-04T17:56:05.281153+0530 DEBUG Closing DB session.
+2024-09-04T17:56:05.281153+0530 DEBUG Closing DB session.
+2024-09-04T17:56:16.872102+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x110f0b8c0>
+2024-09-04T17:56:16.872102+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x110f0b8c0>
+2024-09-04T17:56:16.886578+0530 DEBUG Closing DB session.
+2024-09-04T17:56:16.886578+0530 DEBUG Closing DB session.
+2024-09-04T17:56:53.454158+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x110eca0c0>
+2024-09-04T17:56:53.454158+0530 DEBUG DB session created: <sqlmodel.orm.session.Session object at 0x110eca0c0>
+2024-09-04T17:56:53.529612+0530 DEBUG Closing DB session.
+2024-09-04T17:56:53.529612+0530 DEBUG Closing DB session.

@@ -1,0 +1,40 @@
+2024-09-04T14:57:36.879633+0530 ERROR Error : (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 98e67ed59e1d1-2d8d5f90890sm6231356a91.47 - gsmtp')
+2024-09-04T14:57:36.879633+0530 ERROR Error : (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 98e67ed59e1d1-2d8d5f90890sm6231356a91.47 - gsmtp')
+2024-09-04T15:09:35.503959+0530 ERROR Error : 'Session' object has no attribute 'func'
+2024-09-04T15:09:35.503959+0530 ERROR Error : 'Session' object has no attribute 'func'
+2024-09-04T15:10:03.418114+0530 ERROR Error : 'Session' object has no attribute 'func'
+2024-09-04T15:10:03.418114+0530 ERROR Error : 'Session' object has no attribute 'func'
+2024-09-04T15:10:09.888088+0530 ERROR Error : 'Session' object has no attribute 'func'
+2024-09-04T15:10:09.888088+0530 ERROR Error : 'Session' object has no attribute 'func'
+2024-09-04T15:13:01.801877+0530 ERROR Error : [ValueError('dictionary update sequence element #0 has length 5; 2 is required'), TypeError('vars() argument must have __dict__ attribute')]
+2024-09-04T15:13:01.801877+0530 ERROR Error : [ValueError('dictionary update sequence element #0 has length 5; 2 is required'), TypeError('vars() argument must have __dict__ attribute')]
+2024-09-04T15:15:23.215061+0530 ERROR Error : 'Session' object has no attribute 'func'
+2024-09-04T15:15:23.215061+0530 ERROR Error : 'Session' object has no attribute 'func'
+2024-09-04T15:17:10.730073+0530 ERROR Error : [ValueError('dictionary update sequence element #0 has length 5; 2 is required'), TypeError('vars() argument must have __dict__ attribute')]
+2024-09-04T15:17:10.730073+0530 ERROR Error : [ValueError('dictionary update sequence element #0 has length 5; 2 is required'), TypeError('vars() argument must have __dict__ attribute')]
+2024-09-04T15:19:43.876450+0530 ERROR Unhandled error: [ValueError('dictionary update sequence element #0 has length 5; 2 is required'), TypeError('vars() argument must have __dict__ attribute')]
+2024-09-04T15:19:43.876450+0530 ERROR Unhandled error: [ValueError('dictionary update sequence element #0 has length 5; 2 is required'), TypeError('vars() argument must have __dict__ attribute')]
+2024-09-04T15:23:23.842687+0530 ERROR Unhandled error: Can't determine which FROM clause to join from, there are multiple FROMS which can join to this entity. Please use the .select_from() method to establish an explicit left side, as well as providing an explicit ON clause if not present already to help resolve the ambiguity.
+2024-09-04T15:23:23.842687+0530 ERROR Unhandled error: Can't determine which FROM clause to join from, there are multiple FROMS which can join to this entity. Please use the .select_from() method to establish an explicit left side, as well as providing an explicit ON clause if not present already to help resolve the ambiguity.
+2024-09-04T15:38:31.266677+0530 ERROR Unhandled error: 'str' object has no attribute '_sa_instance_state'
+2024-09-04T15:38:31.266677+0530 ERROR Unhandled error: 'str' object has no attribute '_sa_instance_state'
+2024-09-04T15:39:35.418243+0530 ERROR Unhandled error: 'str' object has no attribute '_sa_instance_state'
+2024-09-04T15:39:35.418243+0530 ERROR Unhandled error: 'str' object has no attribute '_sa_instance_state'
+2024-09-04T15:49:13.319512+0530 ERROR Unhandled error: (MySQLdb.IntegrityError) (1048, "Column 'org_id' cannot be null")
+[SQL: INSERT INTO `role` (name, description, org_id) VALUES (%s, %s, %s)]
+[parameters: ('Admin', None, None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-09-04T15:49:13.319512+0530 ERROR Unhandled error: (MySQLdb.IntegrityError) (1048, "Column 'org_id' cannot be null")
+[SQL: INSERT INTO `role` (name, description, org_id) VALUES (%s, %s, %s)]
+[parameters: ('Admin', None, None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-09-04T15:54:53.672233+0530 ERROR Unhandled error: (MySQLdb.IntegrityError) (1048, "Column 'org_id' cannot be null")
+[SQL: INSERT INTO `role` (name, description, org_id) VALUES (%s, %s, %s)]
+[parameters: ('Admin', None, None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-09-04T15:54:53.672233+0530 ERROR Unhandled error: (MySQLdb.IntegrityError) (1048, "Column 'org_id' cannot be null")
+[SQL: INSERT INTO `role` (name, description, org_id) VALUES (%s, %s, %s)]
+[parameters: ('Admin', None, None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-09-04T17:34:21.352909+0530 ERROR Unhandled error: HTTPException.__init__() got an unexpected keyword argument 'content'
+2024-09-04T17:34:21.352909+0530 ERROR Unhandled error: HTTPException.__init__() got an unexpected keyword argument 'content'
