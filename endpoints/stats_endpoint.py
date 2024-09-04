@@ -24,6 +24,10 @@ def role_wise_users(db: Session = Depends(get_db)):
         result = db.query(Role.name, func.count(Member.id)).join(Member).group_by(Role.name).all()
         data = [{"role": role, "user_count": user_count} for role, user_count in result]
         return JSONResponse(status_code=HTTP_200_OK, content={"data": data})
+    
+    except HTTPException as http_err:
+        raise http_err
+    
     except SQLAlchemyError as e:
         logger.debug(f"Database error: {e}")
         raise HTTPException(status_code=HTTP_500_INTERNAL_SERVER_ERROR, detail="An error occurred while fetching role-wise user statistics.")
@@ -38,6 +42,10 @@ def org_wise_members(db: Session = Depends(get_db)):
         result = db.query(Organization.name, func.count(Member.id)).join(Member).group_by(Organization.name).all()
         data = [{"organization": org, "member_count": member_count} for org, member_count in result]
         return JSONResponse(status_code=HTTP_200_OK, content={"data": data})
+    
+    except HTTPException as http_err:
+        raise http_err
+    
     except SQLAlchemyError as e:
         logger.debug(f"Database error: {e}")
         raise HTTPException(status_code=HTTP_500_INTERNAL_SERVER_ERROR, detail="An error occurred while fetching organization-wise member statistics.")
@@ -53,6 +61,10 @@ def org_role_wise_users(db: Session = Depends(get_db)):
         result = db.query(Organization.name, Role.name, func.count(Member.id)).select_from(Member).join(Organization).join(Role).group_by(Organization.name, Role.name).all()
         data = [{"organization": org, "role": role, "user_count": user_count} for org, role, user_count in result]
         return JSONResponse(status_code=HTTP_200_OK, content={"data": data})
+    
+    except HTTPException as http_err:
+        raise http_err
+    
     except SQLAlchemyError as e:
         logger.debug(f"Database error: {e}")
         raise HTTPException(status_code=HTTP_500_INTERNAL_SERVER_ERROR, detail="An error occurred while fetching organization-role-wise user statistics.")

@@ -33,10 +33,13 @@ def invite_member(user_email: str, org_id: int, role_id: int, db: Session = Depe
         db.commit()
         db.refresh(new_member)
 
-        send_email("You are invited", user_email, f"You have been invited to join the organization with role ID {role_id}.")
+        send_email("You are invited", user_email, f"You have been invited to join the Product Fusion with role ID {role_id}.")
 
         return JSONResponse(status_code=HTTP_200_OK, content={"message": "Member invited successfully"})
-
+    
+    except HTTPException as http_err:
+        raise http_err
+    
     except SQLAlchemyError as e:
         logger.debug(f"Database error: {e}")
         raise HTTPException(status_code=HTTP_500_INTERNAL_SERVER_ERROR, detail="An error occurred while inviting the member.")
@@ -77,6 +80,9 @@ def delete_member(member_id: int, db: Session = Depends(get_db)):
 
         return JSONResponse(status_code=HTTP_200_OK, content={"message": "Member and related data deleted successfully"})
 
+    except HTTPException as http_err:
+        raise http_err
+    
     except SQLAlchemyError as e:
         logger.debug(f"Database error: {e}")
         raise HTTPException(status_code=HTTP_500_INTERNAL_SERVER_ERROR, detail="An error occurred while deleting the member and related data.")
@@ -107,6 +113,9 @@ def update_member_role(member_id: int, role_name: str, db: Session = Depends(get
 
         return JSONResponse(status_code=HTTP_200_OK, content={"message": "Member role updated successfully"})
 
+    except HTTPException as http_err:
+        raise http_err
+    
     except SQLAlchemyError as e:
         logger.debug(f"Database error: {e}")
         raise HTTPException(status_code=HTTP_500_INTERNAL_SERVER_ERROR, detail="An error occurred while updating the member role.")
