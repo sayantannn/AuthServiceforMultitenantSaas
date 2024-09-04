@@ -31,7 +31,7 @@ def create_access_token(data: dict, expires_delta: Optional[timedelta] = None):
     return encoded_jwt
 
 # Email Sending
-resend.api_key = os.getenv("RESEND_API_KEY", "re_8v8NKwEC_9LigAx4wuCS6mn1T35iQ9r2V")
+resend.api_key = os.getenv("RESEND_API_KEY")
 
 def send_email(subject: str, recipient: str, body: str):
     params = {
