@@ -24,14 +24,17 @@ member_router = APIRouter()
 @member_router.post("/signup", response_model=str, tags=["Member"])
 def signup(email: str, password: str, org_name: str, db: Session = Depends(get_db)):
     try:
+    
         user = db.query(User).filter(User.email == email).first()
         if user:
             raise HTTPException(status_code=HTTP_400_BAD_REQUEST, detail="Email already registered")
 
-        created_at = datetime.utcnow() + timedelta(hours=5, minutes=30)
+      
+        created_at = int((datetime.utcnow() + timedelta(hours=5, minutes=30)).timestamp())
 
         hashed_password = get_password_hash(password)
         new_user = User(email=email, password=hashed_password, created_at=created_at)
+        
         db.add(new_user)
         db.commit()
         db.refresh(new_user)
@@ -67,8 +70,6 @@ def signup(email: str, password: str, org_name: str, db: Session = Depends(get_d
     except Exception as e:
         logger.debug(f"Unexpected error: {e}")
         raise HTTPException(status_code=HTTP_500_INTERNAL_SERVER_ERROR, detail="An unexpected error occurred.")
-    
-
 
 @member_router.post("/signin",response_model=str, tags=["Member"])
 def signin(email: str, password: str, db: Session = Depends(get_db)):

@@ -103,3 +103,11 @@
 [2024-09-04 17:56:05:282] - 127.0.0.1:59320 - "GET /stats/org-wise-members HTTP/1.1" 200
 [2024-09-04 17:56:16:889] - 127.0.0.1:59330 - "GET /stats/org-role-wise-users HTTP/1.1" 200
 [2024-09-04 17:56:53:532] - 127.0.0.1:59335 - "GET /stats/org-role-wise-users HTTP/1.1" 200
+[2024-09-06 16:51:19:168] - 127.0.0.1:61140 - "GET / HTTP/1.1" 404
+[2024-09-06 16:51:24:968] - 127.0.0.1:61154 - "GET /docs HTTP/1.1" 200
+[2024-09-06 16:51:25:552] - 127.0.0.1:61154 - "GET /openapi.json HTTP/1.1" 200
+[2024-09-06 16:51:49:858] - 127.0.0.1:61166 - "POST /signup?email=sayantanguha75%40gmail.com&password=password&org_name=infosys HTTP/1.1" 400
+[2024-09-06 16:51:59:634] - 127.0.0.1:61175 - "POST /signup?email=sayantankv6%40gmail.com&password=password&org_name=infosys HTTP/1.1" 201
+[2024-09-06 16:55:50:832] - 127.0.0.1:61250 - "DELETE /delete-member/4 HTTP/1.1" 200
+[2024-09-06 16:55:57:843] - 127.0.0.1:61258 - "POST /signup?email=sayantankv6%40gmail.com&password=password&org_name=infosys HTTP/1.1" 500
+[2024-09-06 17:02:39:183] - 127.0.0.1:61410 - "POST /signup?email=sayantankv6%40gmail.com&password=password&org_name=infosys HTTP/1.1" 201
